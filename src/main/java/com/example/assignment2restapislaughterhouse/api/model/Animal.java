@@ -10,12 +10,12 @@ public class Animal {
     // all animals arriving at a particular date, and all animals of a particular origin.
 
     private double weigth;
-    private long regNumber;
+    private int regNumber;
     private String origin;
     private String dateOfReg;
     private String type;
 
-    public Animal(double weigth, long regNumber, String origin, String dateOfReg, String type) {
+    public Animal(int regNumber, String dateOfReg, String origin, double weigth , String type) {
         this.weigth = weigth;
         this.regNumber = regNumber;
         this.origin = origin;
@@ -31,11 +31,11 @@ public class Animal {
         this.weigth = weigth;
     }
 
-    public long getRegNumber() {
+    public int getRegNumber() {
         return regNumber;
     }
 
-    public void setRegNumber(long regNumber) {
+    public void setRegNumber(int regNumber) {
         this.regNumber = regNumber;
     }
 
