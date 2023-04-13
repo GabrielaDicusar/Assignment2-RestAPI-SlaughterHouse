@@ -7,7 +7,8 @@ public class Product implements Serializable {
     private String part;
     private int  AnimalId;
 
-    public Product(String part, int animalId) {
+    public Product(int Id, String part, int animalId) {
+        id=Id;
         this.part = part;
         AnimalId = animalId;
     }

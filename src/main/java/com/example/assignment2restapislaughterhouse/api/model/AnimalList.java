@@ -22,4 +22,23 @@ public class AnimalList {
             }
         }
     }
+
+    public int size(){
+        return animals.size();
+    }
+
+    public Animal getByIndex(int index){
+        return animals.get(index);
+    }
+
+    public List<Animal> getAnimals(){
+        return animals;
+    }
+
+    public boolean print() {
+        for (Animal animal : animals) {
+            System.out.println(animal);
+        }
+        return true;
+    }
 }

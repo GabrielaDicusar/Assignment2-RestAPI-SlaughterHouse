@@ -20,6 +20,8 @@ public class GetListsImpl implements GetLists{
                 statement.setInt(1,productId);
                 ResultSet resultSet = statement.executeQuery();
 
+                System.out.println(resultSet + "printed resultset");
+
                 int RegNumber;
                 String RegDate;
                 String Origin;
@@ -55,10 +57,10 @@ public class GetListsImpl implements GetLists{
                 int Animal_id;
 
                 while (resultSet.next()){
-//                    Id = resultSet.getInt("Id");
+                    Id = resultSet.getInt("Id");
                     Part = resultSet.getString("Part");
                     Animal_id = resultSet.getInt("Animal_Id");
-                    p.addProduct(new Product( Part, Animal_id));
+                    p.addProduct(new Product( Id, Part, Animal_id));
                 }
 
             } catch (SQLException e) {

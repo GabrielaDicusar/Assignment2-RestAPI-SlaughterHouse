@@ -22,4 +22,12 @@ public class ProductList {
             }
         }
     }
+
+    public Product getByIndex(int index){
+        return products.get(index);
+    }
+
+    public int size(){
+        return products.size();
+    }
 }

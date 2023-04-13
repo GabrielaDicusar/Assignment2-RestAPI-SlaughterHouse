@@ -12,9 +12,10 @@ public class CreateProductDaoImpl implements CreateProductDao{
     @Override
     public boolean CreateProduct(Product product) {
         try (Connection connection = DbConnection.getConnection()) {
-                PreparedStatement statement2 = connection.prepareStatement("INSERT INTO Product(Part,\"Animal_Id\") VALUES (?,?);");
-                statement2.setString(1, product.getPart());
-                statement2.setInt(2, product.getAnimalId());
+                PreparedStatement statement2 = connection.prepareStatement("INSERT INTO Product(Id,\"Part\",\"Animal_Id\") VALUES (?,?,?);");
+                statement2.setInt(1,product.getId());
+                statement2.setString(2, product.getPart());
+                statement2.setInt(3, product.getAnimalId());
 
                 if(isAnimalIdExistent(product.getAnimalId()))
                 {
