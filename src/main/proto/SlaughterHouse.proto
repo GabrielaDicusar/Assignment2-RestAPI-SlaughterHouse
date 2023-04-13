@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+option java_package = "com.sep3.protobuf";
+
+service SlaughterHouse {
+  rpc AddAnimal(Animal) returns (ResponceMessage);
+  rpc GetAnimal(RegNumber) returns(Animal);
+  rpc GetAnimals(ProductId) returns(AnimalList);
+  rpc AddProduct(Product) returns (ResponceMessage);
+  rpc GetProductByAnimalRegNumber(RegNumber) returns (ProductList);
+}
+
+message Animal{
+  int32 RegNumber = 1;
+  string RegDate = 2;
+  string Origin = 3;
+  int32 Weight = 4;
+  string Type = 5;
+}
+
+message RegNumber{
+  int32 RegNumber = 1;
+}
+
+message ResponceMessage{
+  string rspMessage = 1;
+  int32 code = 2;
+}
+message AnimalList{
+  repeated Animal animals = 1;
+  string rspMessage = 2;
+  int32 code = 3;
+}
+
+message ProductId{
+  int32 ProductId = 1;
+}
+
+message ProductList{
+  repeated Product products = 1;
+  string rspMessage = 2;
+  int32 code = 3;
+}
+
+message Product{
+  int32 RegNumber = 1;
+  string RegDate = 2;
+  string Origin = 3;
+  int32 Weight = 4;
+  string Type = 5;
+}
