@@ -1,4 +1,4 @@
-package com.example.assignment2restapislaughterhouse.api.model;
+package com.example.assignment2restapislaughterhouse.model;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

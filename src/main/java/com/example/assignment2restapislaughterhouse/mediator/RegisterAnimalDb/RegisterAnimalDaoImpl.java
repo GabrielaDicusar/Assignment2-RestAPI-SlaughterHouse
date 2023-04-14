@@ -1,7 +1,7 @@
-package com.example.assignment2restapislaughterhouse.api.mediator.RegisterAnimalDb;
+package com.example.assignment2restapislaughterhouse.mediator.RegisterAnimalDb;
 
-import com.example.assignment2restapislaughterhouse.api.mediator.DbConnection;
-import com.example.assignment2restapislaughterhouse.api.model.Animal;
+import com.example.assignment2restapislaughterhouse.mediator.DbConnection;
+import com.example.assignment2restapislaughterhouse.model.Animal;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

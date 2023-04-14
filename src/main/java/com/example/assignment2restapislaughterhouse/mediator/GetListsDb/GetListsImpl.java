@@ -1,10 +1,10 @@
-package com.example.assignment2restapislaughterhouse.api.mediator.GetListsDb;
+package com.example.assignment2restapislaughterhouse.mediator.GetListsDb;
 
-import com.example.assignment2restapislaughterhouse.api.mediator.DbConnection;
-import com.example.assignment2restapislaughterhouse.api.model.Animal;
-import com.example.assignment2restapislaughterhouse.api.model.AnimalList;
-import com.example.assignment2restapislaughterhouse.api.model.Product;
-import com.example.assignment2restapislaughterhouse.api.model.ProductList;
+import com.example.assignment2restapislaughterhouse.mediator.DbConnection;
+import com.example.assignment2restapislaughterhouse.model.Animal;
+import com.example.assignment2restapislaughterhouse.model.AnimalList;
+import com.example.assignment2restapislaughterhouse.model.Product;
+import com.example.assignment2restapislaughterhouse.model.ProductList;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

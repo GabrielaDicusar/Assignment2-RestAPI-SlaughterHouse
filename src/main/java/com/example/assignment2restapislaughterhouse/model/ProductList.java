@@ -1,4 +1,4 @@
-package com.example.assignment2restapislaughterhouse.api.model;
+package com.example.assignment2restapislaughterhouse.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,5 +29,9 @@ public class ProductList {
 
     public int size(){
         return products.size();
+    }
+
+    public List<Product> getProducts(){
+        return products;
     }
 }

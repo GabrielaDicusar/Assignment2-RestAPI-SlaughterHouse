@@ -1,4 +1,4 @@
-package com.example.assignment2restapislaughterhouse.api.model;
+package com.example.assignment2restapislaughterhouse.model;
 
 import java.io.Serializable;
 

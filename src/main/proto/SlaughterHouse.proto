@@ -5,7 +5,7 @@ option java_package = "com.sep3.protobuf";
 service SlaughterHouse {
   rpc AddAnimal(Animal) returns (ResponceMessage);
   rpc GetAnimal(RegNumber) returns(Animal);
-  rpc GetAnimals(ProductId) returns(AnimalList);
+  rpc GetAnimalsByProductId(ProductId) returns(AnimalList);
   rpc AddProduct(Product) returns (ResponceMessage);
   rpc GetProductByAnimalRegNumber(RegNumber) returns (ProductList);
 }
@@ -43,9 +43,7 @@ message ProductList{
 }
 
 message Product{
-  int32 RegNumber = 1;
-  string RegDate = 2;
-  string Origin = 3;
-  int32 Weight = 4;
-  string Type = 5;
+  int32 Id = 1;
+  string Part = 2;
+  int32 AnimalId = 3;
 }

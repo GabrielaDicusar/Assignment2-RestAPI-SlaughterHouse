@@ -1,7 +1,7 @@
-package com.example.assignment2restapislaughterhouse.api.mediator.CreateProductDb;
+package com.example.assignment2restapislaughterhouse.mediator.CreateProductDb;
 
-import com.example.assignment2restapislaughterhouse.api.mediator.DbConnection;
-import com.example.assignment2restapislaughterhouse.api.model.Product;
+import com.example.assignment2restapislaughterhouse.mediator.DbConnection;
+import com.example.assignment2restapislaughterhouse.model.Product;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

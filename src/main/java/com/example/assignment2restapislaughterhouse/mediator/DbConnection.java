@@ -1,4 +1,4 @@
-package com.example.assignment2restapislaughterhouse.api.mediator;
+package com.example.assignment2restapislaughterhouse.mediator;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
