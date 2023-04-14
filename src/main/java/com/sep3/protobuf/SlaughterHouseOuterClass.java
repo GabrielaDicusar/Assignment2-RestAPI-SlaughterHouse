@@ -4679,52 +4679,28 @@ public final class SlaughterHouseOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 RegNumber = 1;</code>
-     * @return The regNumber.
+     * <code>int32 Id = 1;</code>
+     * @return The id.
      */
-    int getRegNumber();
+    int getId();
 
     /**
-     * <code>string RegDate = 2;</code>
-     * @return The regDate.
+     * <code>string Part = 2;</code>
+     * @return The part.
      */
-    java.lang.String getRegDate();
+    java.lang.String getPart();
     /**
-     * <code>string RegDate = 2;</code>
-     * @return The bytes for regDate.
+     * <code>string Part = 2;</code>
+     * @return The bytes for part.
      */
     com.google.protobuf.ByteString
-        getRegDateBytes();
+        getPartBytes();
 
     /**
-     * <code>string Origin = 3;</code>
-     * @return The origin.
+     * <code>int32 AnimalId = 3;</code>
+     * @return The animalId.
      */
-    java.lang.String getOrigin();
-    /**
-     * <code>string Origin = 3;</code>
-     * @return The bytes for origin.
-     */
-    com.google.protobuf.ByteString
-        getOriginBytes();
-
-    /**
-     * <code>int32 Weight = 4;</code>
-     * @return The weight.
-     */
-    int getWeight();
-
-    /**
-     * <code>string Type = 5;</code>
-     * @return The type.
-     */
-    java.lang.String getType();
-    /**
-     * <code>string Type = 5;</code>
-     * @return The bytes for type.
-     */
-    com.google.protobuf.ByteString
-        getTypeBytes();
+    int getAnimalId();
   }
   /**
    * Protobuf type {@code Product}
@@ -4739,9 +4715,7 @@ public final class SlaughterHouseOuterClass {
       super(builder);
     }
     private Product() {
-      regDate_ = "";
-      origin_ = "";
-      type_ = "";
+      part_ = "";
     }
 
     @java.lang.Override
@@ -4776,30 +4750,18 @@ public final class SlaughterHouseOuterClass {
               break;
             case 8: {
 
-              regNumber_ = input.readInt32();
+              id_ = input.readInt32();
               break;
             }
             case 18: {
               java.lang.String s = input.readStringRequireUtf8();
 
-              regDate_ = s;
+              part_ = s;
               break;
             }
-            case 26: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 24: {
 
-              origin_ = s;
-              break;
-            }
-            case 32: {
-
-              weight_ = input.readInt32();
-              break;
-            }
-            case 42: {
-              java.lang.String s = input.readStringRequireUtf8();
-
-              type_ = s;
+              animalId_ = input.readInt32();
               break;
             }
             default: {
@@ -4836,140 +4798,64 @@ public final class SlaughterHouseOuterClass {
               com.sep3.protobuf.SlaughterHouseOuterClass.Product.class, com.sep3.protobuf.SlaughterHouseOuterClass.Product.Builder.class);
     }
 
-    public static final int REGNUMBER_FIELD_NUMBER = 1;
-    private int regNumber_;
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
     /**
-     * <code>int32 RegNumber = 1;</code>
-     * @return The regNumber.
+     * <code>int32 Id = 1;</code>
+     * @return The id.
      */
     @java.lang.Override
-    public int getRegNumber() {
-      return regNumber_;
+    public int getId() {
+      return id_;
     }
 
-    public static final int REGDATE_FIELD_NUMBER = 2;
-    private volatile java.lang.Object regDate_;
+    public static final int PART_FIELD_NUMBER = 2;
+    private volatile java.lang.Object part_;
     /**
-     * <code>string RegDate = 2;</code>
-     * @return The regDate.
+     * <code>string Part = 2;</code>
+     * @return The part.
      */
     @java.lang.Override
-    public java.lang.String getRegDate() {
-      java.lang.Object ref = regDate_;
+    public java.lang.String getPart() {
+      java.lang.Object ref = part_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        regDate_ = s;
+        part_ = s;
         return s;
       }
     }
     /**
-     * <code>string RegDate = 2;</code>
-     * @return The bytes for regDate.
+     * <code>string Part = 2;</code>
+     * @return The bytes for part.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getRegDateBytes() {
-      java.lang.Object ref = regDate_;
+        getPartBytes() {
+      java.lang.Object ref = part_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        regDate_ = b;
+        part_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
       }
     }
 
-    public static final int ORIGIN_FIELD_NUMBER = 3;
-    private volatile java.lang.Object origin_;
+    public static final int ANIMALID_FIELD_NUMBER = 3;
+    private int animalId_;
     /**
-     * <code>string Origin = 3;</code>
-     * @return The origin.
+     * <code>int32 AnimalId = 3;</code>
+     * @return The animalId.
      */
     @java.lang.Override
-    public java.lang.String getOrigin() {
-      java.lang.Object ref = origin_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        origin_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string Origin = 3;</code>
-     * @return The bytes for origin.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getOriginBytes() {
-      java.lang.Object ref = origin_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        origin_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
-    }
-
-    public static final int WEIGHT_FIELD_NUMBER = 4;
-    private int weight_;
-    /**
-     * <code>int32 Weight = 4;</code>
-     * @return The weight.
-     */
-    @java.lang.Override
-    public int getWeight() {
-      return weight_;
-    }
-
-    public static final int TYPE_FIELD_NUMBER = 5;
-    private volatile java.lang.Object type_;
-    /**
-     * <code>string Type = 5;</code>
-     * @return The type.
-     */
-    @java.lang.Override
-    public java.lang.String getType() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        return (java.lang.String) ref;
-      } else {
-        com.google.protobuf.ByteString bs = 
-            (com.google.protobuf.ByteString) ref;
-        java.lang.String s = bs.toStringUtf8();
-        type_ = s;
-        return s;
-      }
-    }
-    /**
-     * <code>string Type = 5;</code>
-     * @return The bytes for type.
-     */
-    @java.lang.Override
-    public com.google.protobuf.ByteString
-        getTypeBytes() {
-      java.lang.Object ref = type_;
-      if (ref instanceof java.lang.String) {
-        com.google.protobuf.ByteString b = 
-            com.google.protobuf.ByteString.copyFromUtf8(
-                (java.lang.String) ref);
-        type_ = b;
-        return b;
-      } else {
-        return (com.google.protobuf.ByteString) ref;
-      }
+    public int getAnimalId() {
+      return animalId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -4986,20 +4872,14 @@ public final class SlaughterHouseOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (regNumber_ != 0) {
-        output.writeInt32(1, regNumber_);
+      if (id_ != 0) {
+        output.writeInt32(1, id_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(regDate_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, regDate_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(part_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, part_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(origin_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 3, origin_);
-      }
-      if (weight_ != 0) {
-        output.writeInt32(4, weight_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 5, type_);
+      if (animalId_ != 0) {
+        output.writeInt32(3, animalId_);
       }
       unknownFields.writeTo(output);
     }
@@ -5010,22 +4890,16 @@ public final class SlaughterHouseOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (regNumber_ != 0) {
+      if (id_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, regNumber_);
+          .computeInt32Size(1, id_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(regDate_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, regDate_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(part_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, part_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(origin_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, origin_);
-      }
-      if (weight_ != 0) {
+      if (animalId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(4, weight_);
-      }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(type_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, type_);
+          .computeInt32Size(3, animalId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -5042,16 +4916,12 @@ public final class SlaughterHouseOuterClass {
       }
       com.sep3.protobuf.SlaughterHouseOuterClass.Product other = (com.sep3.protobuf.SlaughterHouseOuterClass.Product) obj;
 
-      if (getRegNumber()
-          != other.getRegNumber()) return false;
-      if (!getRegDate()
-          .equals(other.getRegDate())) return false;
-      if (!getOrigin()
-          .equals(other.getOrigin())) return false;
-      if (getWeight()
-          != other.getWeight()) return false;
-      if (!getType()
-          .equals(other.getType())) return false;
+      if (getId()
+          != other.getId()) return false;
+      if (!getPart()
+          .equals(other.getPart())) return false;
+      if (getAnimalId()
+          != other.getAnimalId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -5063,16 +4933,12 @@ public final class SlaughterHouseOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + REGNUMBER_FIELD_NUMBER;
-      hash = (53 * hash) + getRegNumber();
-      hash = (37 * hash) + REGDATE_FIELD_NUMBER;
-      hash = (53 * hash) + getRegDate().hashCode();
-      hash = (37 * hash) + ORIGIN_FIELD_NUMBER;
-      hash = (53 * hash) + getOrigin().hashCode();
-      hash = (37 * hash) + WEIGHT_FIELD_NUMBER;
-      hash = (53 * hash) + getWeight();
-      hash = (37 * hash) + TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getType().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId();
+      hash = (37 * hash) + PART_FIELD_NUMBER;
+      hash = (53 * hash) + getPart().hashCode();
+      hash = (37 * hash) + ANIMALID_FIELD_NUMBER;
+      hash = (53 * hash) + getAnimalId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -5206,15 +5072,11 @@ public final class SlaughterHouseOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        regNumber_ = 0;
+        id_ = 0;
 
-        regDate_ = "";
+        part_ = "";
 
-        origin_ = "";
-
-        weight_ = 0;
-
-        type_ = "";
+        animalId_ = 0;
 
         return this;
       }
@@ -5242,11 +5104,9 @@ public final class SlaughterHouseOuterClass {
       @java.lang.Override
       public com.sep3.protobuf.SlaughterHouseOuterClass.Product buildPartial() {
         com.sep3.protobuf.SlaughterHouseOuterClass.Product result = new com.sep3.protobuf.SlaughterHouseOuterClass.Product(this);
-        result.regNumber_ = regNumber_;
-        result.regDate_ = regDate_;
-        result.origin_ = origin_;
-        result.weight_ = weight_;
-        result.type_ = type_;
+        result.id_ = id_;
+        result.part_ = part_;
+        result.animalId_ = animalId_;
         onBuilt();
         return result;
       }
@@ -5295,23 +5155,15 @@ public final class SlaughterHouseOuterClass {
 
       public Builder mergeFrom(com.sep3.protobuf.SlaughterHouseOuterClass.Product other) {
         if (other == com.sep3.protobuf.SlaughterHouseOuterClass.Product.getDefaultInstance()) return this;
-        if (other.getRegNumber() != 0) {
-          setRegNumber(other.getRegNumber());
+        if (other.getId() != 0) {
+          setId(other.getId());
         }
-        if (!other.getRegDate().isEmpty()) {
-          regDate_ = other.regDate_;
+        if (!other.getPart().isEmpty()) {
+          part_ = other.part_;
           onChanged();
         }
-        if (!other.getOrigin().isEmpty()) {
-          origin_ = other.origin_;
-          onChanged();
-        }
-        if (other.getWeight() != 0) {
-          setWeight(other.getWeight());
-        }
-        if (!other.getType().isEmpty()) {
-          type_ = other.type_;
-          onChanged();
+        if (other.getAnimalId() != 0) {
+          setAnimalId(other.getAnimalId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -5342,292 +5194,140 @@ public final class SlaughterHouseOuterClass {
         return this;
       }
 
-      private int regNumber_ ;
+      private int id_ ;
       /**
-       * <code>int32 RegNumber = 1;</code>
-       * @return The regNumber.
+       * <code>int32 Id = 1;</code>
+       * @return The id.
        */
       @java.lang.Override
-      public int getRegNumber() {
-        return regNumber_;
+      public int getId() {
+        return id_;
       }
       /**
-       * <code>int32 RegNumber = 1;</code>
-       * @param value The regNumber to set.
+       * <code>int32 Id = 1;</code>
+       * @param value The id to set.
        * @return This builder for chaining.
        */
-      public Builder setRegNumber(int value) {
+      public Builder setId(int value) {
         
-        regNumber_ = value;
+        id_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 RegNumber = 1;</code>
+       * <code>int32 Id = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRegNumber() {
+      public Builder clearId() {
         
-        regNumber_ = 0;
+        id_ = 0;
         onChanged();
         return this;
       }
 
-      private java.lang.Object regDate_ = "";
+      private java.lang.Object part_ = "";
       /**
-       * <code>string RegDate = 2;</code>
-       * @return The regDate.
+       * <code>string Part = 2;</code>
+       * @return The part.
        */
-      public java.lang.String getRegDate() {
-        java.lang.Object ref = regDate_;
+      public java.lang.String getPart() {
+        java.lang.Object ref = part_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          regDate_ = s;
+          part_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string RegDate = 2;</code>
-       * @return The bytes for regDate.
+       * <code>string Part = 2;</code>
+       * @return The bytes for part.
        */
       public com.google.protobuf.ByteString
-          getRegDateBytes() {
-        java.lang.Object ref = regDate_;
+          getPartBytes() {
+        java.lang.Object ref = part_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          regDate_ = b;
+          part_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string RegDate = 2;</code>
-       * @param value The regDate to set.
+       * <code>string Part = 2;</code>
+       * @param value The part to set.
        * @return This builder for chaining.
        */
-      public Builder setRegDate(
+      public Builder setPart(
           java.lang.String value) {
         if (value == null) {
     throw new NullPointerException();
   }
   
-        regDate_ = value;
+        part_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>string RegDate = 2;</code>
+       * <code>string Part = 2;</code>
        * @return This builder for chaining.
        */
-      public Builder clearRegDate() {
+      public Builder clearPart() {
         
-        regDate_ = getDefaultInstance().getRegDate();
+        part_ = getDefaultInstance().getPart();
         onChanged();
         return this;
       }
       /**
-       * <code>string RegDate = 2;</code>
-       * @param value The bytes for regDate to set.
+       * <code>string Part = 2;</code>
+       * @param value The bytes for part to set.
        * @return This builder for chaining.
        */
-      public Builder setRegDateBytes(
+      public Builder setPartBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) {
     throw new NullPointerException();
   }
   checkByteStringIsUtf8(value);
         
-        regDate_ = value;
+        part_ = value;
         onChanged();
         return this;
       }
 
-      private java.lang.Object origin_ = "";
+      private int animalId_ ;
       /**
-       * <code>string Origin = 3;</code>
-       * @return The origin.
-       */
-      public java.lang.String getOrigin() {
-        java.lang.Object ref = origin_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          origin_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string Origin = 3;</code>
-       * @return The bytes for origin.
-       */
-      public com.google.protobuf.ByteString
-          getOriginBytes() {
-        java.lang.Object ref = origin_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          origin_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string Origin = 3;</code>
-       * @param value The origin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOrigin(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        origin_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string Origin = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearOrigin() {
-        
-        origin_ = getDefaultInstance().getOrigin();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string Origin = 3;</code>
-       * @param value The bytes for origin to set.
-       * @return This builder for chaining.
-       */
-      public Builder setOriginBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        origin_ = value;
-        onChanged();
-        return this;
-      }
-
-      private int weight_ ;
-      /**
-       * <code>int32 Weight = 4;</code>
-       * @return The weight.
+       * <code>int32 AnimalId = 3;</code>
+       * @return The animalId.
        */
       @java.lang.Override
-      public int getWeight() {
-        return weight_;
+      public int getAnimalId() {
+        return animalId_;
       }
       /**
-       * <code>int32 Weight = 4;</code>
-       * @param value The weight to set.
+       * <code>int32 AnimalId = 3;</code>
+       * @param value The animalId to set.
        * @return This builder for chaining.
        */
-      public Builder setWeight(int value) {
+      public Builder setAnimalId(int value) {
         
-        weight_ = value;
+        animalId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>int32 Weight = 4;</code>
+       * <code>int32 AnimalId = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearWeight() {
+      public Builder clearAnimalId() {
         
-        weight_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object type_ = "";
-      /**
-       * <code>string Type = 5;</code>
-       * @return The type.
-       */
-      public java.lang.String getType() {
-        java.lang.Object ref = type_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          type_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string Type = 5;</code>
-       * @return The bytes for type.
-       */
-      public com.google.protobuf.ByteString
-          getTypeBytes() {
-        java.lang.Object ref = type_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          type_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string Type = 5;</code>
-       * @param value The type to set.
-       * @return This builder for chaining.
-       */
-      public Builder setType(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        type_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string Type = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearType() {
-        
-        type_ = getDefaultInstance().getType();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string Type = 5;</code>
-       * @param value The bytes for type to set.
-       * @return This builder for chaining.
-       */
-      public Builder setTypeBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        type_ = value;
+        animalId_ = 0;
         onChanged();
         return this;
       }
@@ -5737,16 +5437,15 @@ public final class SlaughterHouseOuterClass {
       "\022\n\nrspMessage\030\002 \001(\t\022\014\n\004code\030\003 \001(\005\"\036\n\tPro" +
       "ductId\022\021\n\tProductId\030\001 \001(\005\"K\n\013ProductList" +
       "\022\032\n\010products\030\001 \003(\0132\010.Product\022\022\n\nrspMessa" +
-      "ge\030\002 \001(\t\022\014\n\004code\030\003 \001(\005\"[\n\007Product\022\021\n\tReg" +
-      "Number\030\001 \001(\005\022\017\n\007RegDate\030\002 \001(\t\022\016\n\006Origin\030" +
-      "\003 \001(\t\022\016\n\006Weight\030\004 \001(\005\022\014\n\004Type\030\005 \001(\t2\344\001\n\016" +
-      "SlaughterHouse\022&\n\tAddAnimal\022\007.Animal\032\020.R" +
-      "esponceMessage\022 \n\tGetAnimal\022\n.RegNumber\032" +
-      "\007.Animal\022%\n\nGetAnimals\022\n.ProductId\032\013.Ani" +
-      "malList\022(\n\nAddProduct\022\010.Product\032\020.Respon" +
-      "ceMessage\0227\n\033GetProductByAnimalRegNumber" +
-      "\022\n.RegNumber\032\014.ProductListB\023\n\021com.sep3.p" +
-      "rotobufb\006proto3"
+      "ge\030\002 \001(\t\022\014\n\004code\030\003 \001(\005\"5\n\007Product\022\n\n\002Id\030" +
+      "\001 \001(\005\022\014\n\004Part\030\002 \001(\t\022\020\n\010AnimalId\030\003 \001(\0052\357\001" +
+      "\n\016SlaughterHouse\022&\n\tAddAnimal\022\007.Animal\032\020" +
+      ".ResponceMessage\022 \n\tGetAnimal\022\n.RegNumbe" +
+      "r\032\007.Animal\0220\n\025GetAnimalsByProductId\022\n.Pr" +
+      "oductId\032\013.AnimalList\022(\n\nAddProduct\022\010.Pro" +
+      "duct\032\020.ResponceMessage\0227\n\033GetProductByAn" +
+      "imalRegNumber\022\n.RegNumber\032\014.ProductListB" +
+      "\023\n\021com.sep3.protobufb\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5793,7 +5492,7 @@ public final class SlaughterHouseOuterClass {
     internal_static_Product_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Product_descriptor,
-        new java.lang.String[] { "RegNumber", "RegDate", "Origin", "Weight", "Type", });
+        new java.lang.String[] { "Id", "Part", "AnimalId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
