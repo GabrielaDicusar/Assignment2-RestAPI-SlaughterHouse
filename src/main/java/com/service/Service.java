@@ -111,4 +111,6 @@ public class Service extends SlaughterHouseGrpc.SlaughterHouseImplBase {
         responseObserver.onNext(response.build());
         responseObserver.onCompleted();
     }
+
+
 }
